@@ -62,6 +62,8 @@ let kapitalNachZweiJahren = kapitalNachEinemJahr * (1 + zinssatz);
 
 console.log("Kapital nach zwei Jahren: " + kapitalNachZweiJahren + " EUR.");
 
-let endkapital = Math.pow((startkapital * zinssatz) , laufzeit);
+//let endkapital = Math.pow((startkapital * zinssatz) , laufzeit);
+
+let endkapital = startkapital * Math.pow(1 + zinssatz, laufzeit);
 
 console.log("Endkapital nach " + laufzeit + " Jahren: " + endkapital + " EUR.");
