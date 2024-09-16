@@ -58,3 +58,32 @@ if(Führerschein){ //Führerschein ist bereits true oder false, es bedarf keines
 }else{
     console.log('Fahrrad fahren')
 }
+
+
+console.log("Aufgabe 5")
+
+let kontostand = 10
+
+if (kontostand) {
+    console.log("Zinsen berechnen für kontostand " + kontostand) 
+} else { 
+    console.log("keine Zinsen, da kontostand 0")
+} 
+
+// I der Bundesliga gibt es Punkte für Spiele.
+// Sieg:          3 unkte
+// Unentschieden: 1
+// Niederlagen:   0 Punkte
+
+let spielausgang = "Sieg"
+let mannschaft = "Portugal"
+
+if(spielausgang == "sieg"){
+    console.log("Es gibt 3 Punkte") 
+}
+if(spielausgang == "sieg"){
+    console.log("Es gibt 1 Punkt") 
+}
+if(spielausgang == "sieg"){
+    console.log("Es gibt 0 Punkte") 
+}
