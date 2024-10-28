@@ -4,16 +4,65 @@ console.log("Klausur 20240604")
 // Deklarieren Sie stets Varibalen mit sprechenden Namen und geben Sie einen Antwortsatz auf der Konsole aus.
 
 
+
 console.log("Aufgabe 1")
 // 1a) Berechnen Sie das Volumen eines Würfels mit Hilfe der Grundrechenoperatoren (+ , - , * , /) , bei dem die Kantenlänge mit der Varablen a festgelegt wird.
 
+let a = 5;
+console,log(`Volumen: ` + (a*a*a))
+
+// Das ist der Bauplan, der aus dem im Folgenden die Würfel-Objekte
+// erzeugt werden sollen. Ohne diese Klassendefinition (= Bauplan)
+// können keine Objekte instanziiert werden.
+
+class Wuerfel{
+    constructor(){
+        this.Volumen
+        this.Kantenlaenge
+    }
+    //Die Funktion BerechneVolumen soll das Volumen berechnen
+    BerechneVolumen(){
+        this.Volumen = this.Kantenlaenge * this.Kantenlaenge * this.Kantenlaenge
+    
+    }
+}
+
+
+//Deklaration (=Bekanntmachung), Instanziierung, (=Speicherzellen reservieren)
+
+let Wuerfel = new Wuerfel();
+
+// Initialisierung
+wuerfel.Kantenlaenge = 6;
+
+// Berechnung
+wuerfel.Volumen = wuerfel.Kantenlaenge * wuerfel.Kantenlaenge * wuerfel.Kantenlaenge
+
+console.log("Das Volumen bei einer Kantenlänge von " + wuerfel.Kantenlaenge + "beträgt: " + wuerfel.Volumen + ".")
+
+// Neu: Man kann die Berechnung auch zu einer Funktion innerhalb der Klasse abbilden.
+// Dazu muss die Klasse unterhalb des Constructors die Finktion BerechneVolumen() eingebaut werden.
+// Alternative Berechnung mit der Funktion BerechneVolumen():
+
+wuerfel.Kantenlaenge = 8;
+wuerfel.BerechneVolumen();
+console.log("Das Volumen bei einer Kantenlänge von " + wuerfel.Kantenlaenge + "beträgt: " + wuerfel.Volumen)
 
 
 // 1b) - Nur Klausurschreiber
 // Wiederholen Sie die Berechnung mit Hilfe der Math-Bibliothek, indem Sie die bekannte Funktion .sqrt() verwenden.
 
+if(wuerfel.Volumen >= 1000 {
+    console.log("Das Volumen beträgt 1000 oder mehr Quadratzentimeter.")
+}
 
+// 1c) Nur die Klausurenschreiber 
+//Nutze Sie Math-Bibliothek .sqrt(), um die Wurzelaus dem Volumen zu erreichen. Geben sie die Kantenlaenge an.
 
+// Um die 3. Wurzel zu ziehen, kann die Funktion Math.pow verwendet werden.
+wuerfel.Kantenlaenge = (Math.pow(wuerfel.Volumen,1/3))
+
+console.log("Die Kantenlänge beträgt: " + wuerfel.Kantenlaenge)
 console.log("Aufgabe 2")
 // Für Kreise gilt:
 // Flächeninhalt = Pi * Radius²
@@ -24,6 +73,8 @@ console.log("Aufgabe 2")
 
 // 2a)
 // Testschreiber deklarieren pi und initialisieren pi mit dem Wert 3.14.
+
+
 
 
 
