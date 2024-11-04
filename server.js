@@ -43,7 +43,7 @@ app.listen(PORT, HOST);
 // immer für eine Anweisung etwas zu tun. 
 console.log(`Running on http://${HOST}:${PORT}`);
 
-//require('./uebungen/01-grundlagen.js');
-//require('./uebungen/03-objekte.js');
-
-//require('./klausuren20240604.js');
+require('./uebungen/01-grundlagen.js');
+require('./uebungen/03-objekte.js');
+require('./uebungen/04-funktionen.js');
+require('./klausuren20240604.js');
